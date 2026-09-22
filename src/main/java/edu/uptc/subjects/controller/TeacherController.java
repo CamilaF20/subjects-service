@@ -51,8 +51,7 @@ public class TeacherController {
     @Operation(summary = "List teachers",
             description = "Returns a paginated, sorted list of teachers. Filtering is not supported for teachers.")
     @ApiResponses({
-            @ApiResponse(responseCode = "200", description = "Paginated list of teachers",
-                    content = @Content(schema = @Schema(implementation = PageResponse.class))),
+            @ApiResponse(responseCode = "200", description = "Paginated list of teachers"),
             @ApiResponse(responseCode = "400", description = "Invalid pagination or sorting parameter",
                     content = @Content(schema = @Schema(implementation = ErrorResponse.class)))
     })

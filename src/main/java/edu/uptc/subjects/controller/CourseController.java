@@ -54,8 +54,7 @@ public class CourseController {
             description = "Returns a paginated, sorted list of courses with optional filters by subjectId, teacherId and period. "
                     + "sortBy subjectId and teacherId sort by the referenced subject.id and teacher.id.")
     @ApiResponses({
-            @ApiResponse(responseCode = "200", description = "Paginated list of courses",
-                    content = @Content(schema = @Schema(implementation = PageResponse.class))),
+            @ApiResponse(responseCode = "200", description = "Paginated list of courses"),
             @ApiResponse(responseCode = "400", description = "Invalid pagination, sorting or filter parameter",
                     content = @Content(schema = @Schema(implementation = ErrorResponse.class)))
     })

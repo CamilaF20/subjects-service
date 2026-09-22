@@ -51,8 +51,7 @@ public class SubjectController {
     @Operation(summary = "List subjects",
             description = "Returns a paginated, sorted list of subjects with optional filters by name, program and credits.")
     @ApiResponses({
-            @ApiResponse(responseCode = "200", description = "Paginated list of subjects",
-                    content = @Content(schema = @Schema(implementation = PageResponse.class))),
+            @ApiResponse(responseCode = "200", description = "Paginated list of subjects"),
             @ApiResponse(responseCode = "400", description = "Invalid pagination, sorting or filter parameter",
                     content = @Content(schema = @Schema(implementation = ErrorResponse.class)))
     })
